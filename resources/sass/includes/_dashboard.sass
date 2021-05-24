@@ -1,0 +1,32 @@
+.dashboard
+    display: block
+    width: 100%
+    height: 100vh
+    .aside
+        display: block
+        width: 250px
+        overflow-x: hidden
+        overflow-y: auto
+        vertical-align: top
+        background: #f6f6f8
+        position: fixed
+        top: 0
+        right: 0px
+        bottom: 0
+        transition: right 0.5s
+        z-index: 1
+    .main
+        display: block
+        margin-right: 250px
+.is-login-page
+    padding: 0 !important
+    margin: 0 !important
+@media screen and (max-width: 992px)
+    .dashboard
+        .aside
+            right: -250px !important
+        .main
+            margin-right: 0px !important
+        &.open
+            .aside
+                right: 0px !important

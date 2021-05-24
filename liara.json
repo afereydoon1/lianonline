@@ -1,0 +1,17 @@
+{
+  "platform": "laravel",
+  "app": "lian",
+  "disks": [
+    {
+      "name": "storage",
+      "mountTo": "storage"
+    },
+	{
+      "name": "uploads",
+      "mountTo": "public/uploads"
+    }
+  ],
+  "laravel": {
+    "phpVersion": "7.3"
+  }
+}

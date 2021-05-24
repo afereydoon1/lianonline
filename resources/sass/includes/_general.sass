@@ -1,0 +1,982 @@
+html
+    font-family: $main-font
+    -webkit-text-size-adjust: 100%
+    -ms-text-size-adjust: 100%
+body
+    font-family: $main-font
+    direction: rtl
+    unicode-bidi: embed
+    overflow-x: hidden
+    height: 100%
+    font-size: 13px
+    font-weight: 400
+    line-height: 24px
+    text-align: right
+    color: #0c0c0c
+    background-color: #fff
+
+
+ul, li
+    list-style: none
+    padding: 0
+    margin: 0
+
+a:hover,a:focus
+    text-decoration: none
+
+
+a:focus,button:focus
+    outline: 0
+
+
+body,
+button,
+input,
+select,
+textarea
+    font-family: $main-font
+
+
+/* Placeholder text color -- selectors need to be separate to work. */
+::-webkit-input-placeholder
+    color: rgba(167, 177, 175, 1)
+    font-family: $main-font
+    direction: rtl
+
+
+::-moz-placeholder
+    color: rgba(167, 177, 175, 1)
+    font-family: $main-font
+    direction: rtl
+
+
+::-moz-placeholder
+    color: rgba(167, 177, 175, 1)
+    font-family: $main-font
+    opacity: 1 /* Since FF19 lowers the opacity of the placeholder by default */
+    direction: rtl
+
+
+::-ms-input-placeholder
+    color: rgba(167, 177, 175, 1)
+    font-family: $main-font
+    direction: rtl
+
+
+b,
+strong
+    font-weight: 600
+
+
+img,
+object,
+figure,
+iframe,
+embed
+    max-width: 100%
+    height: auto
+    border: 0
+
+
+legend
+    font-size: 14px
+    font-weight: 600
+    line-height: 28px
+
+
+table
+    width: 100%
+    border: 1px solid #dedede
+    border-spacing: 0
+    border-collapse: separate
+    vertical-align: middle
+
+
+thead
+    font-size: 1em
+    background-color: #eee
+    color: #0c0c0c
+
+
+th
+    font-weight: bold
+    color: #0c0c0c
+
+
+th,td
+    padding: 0.5em
+    border: 1px solid #dedede
+    border-right-width: 0
+    border-top-width: 0
+    text-align: right
+
+
+th:last-child,td:last-child
+    border-left-width: 0
+
+
+tr:last-child td,tr:last-child th
+    border-bottom-width: 0
+
+
+thead tr:last-child td,thead tr:last-child th
+    border-bottom-width: 1px
+
+
+tfoot tr:first-child td,tfoot tr:first-child th
+    border-top-width: 1px
+
+
+button,
+input
+    -webkit-hyphens: none
+    -moz-hyphens: none
+    -ms-hyphens: none
+    hyphens: none
+    line-height: normal
+
+
+input,
+select,
+button,
+textarea
+    font-family: $main-font, tahoma, sans-serif
+    font-weight: 400
+
+
+select:not(.form-control):not(.simple),
+input[type="text"]:not(.form-control),
+input[type="url"]:not(.form-control),
+input[type="email"]:not(.form-control),
+input[type="password"]:not(.form-control),
+input[type="number"]:not(.form-control),
+input[type="tel"]:not(.form-control),
+input[type="range"]:not(.form-control),
+input[type="search"]:not(.form-control)
+    display: block
+    width: 100%
+    padding: .375rem .75rem
+    color: #444444
+    background-color: #fff
+    background-clip: padding-box
+    border: 1px solid #d4d4d4
+    border-radius: .25rem
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out
+
+
+select:not(.form-control):not(.simple):focus,
+input[type="text"]:not(.form-control):focus,
+input[type="url"]:not(.form-control):focus,
+input[type="email"]:not(.form-control):focus,
+input[type="password"]:not(.form-control):focus,
+input[type="number"]:not(.form-control):focus,
+input[type="tel"]:not(.form-control):focus,
+input[type="range"]:not(.form-control):focus,
+input[type="search"]:not(.form-control):focus
+    color: #444444
+    background-color: #fff
+    border-color: #d0d0d0
+    outline: 0
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25)
+
+
+textarea:not(.form-control)
+    display: block
+    width: 100%
+    min-height: 80px
+    padding: .375rem .75rem
+    color: #444444
+    background-color: #fff
+    background-clip: padding-box
+    border: 1px solid #d0d0d0
+    border-radius: .25rem
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out
+    resize: vertical
+
+
+textarea:not(.form-control):focus
+    color: #444444
+    background-color: #fff
+    border-color: #d0d0d0
+    outline: 0
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25)
+
+
+button[type="submit"]:not(.btn),
+input[type="submit"]:not(.btn),
+input[type="button"]:not(.btn)
+    border: 0
+    margin: 0
+    outline: none
+    cursor: pointer
+    -webkit-transition: all 0.2s ease-in-out
+    -moz-transition: all 0.2s ease-in-out
+    transition: all 0.2s ease-in-out
+
+
+input[readonly="readonly"]
+    background-color: #f5f5f5
+
+
+.button:not(.btn),
+button[type="submit"]:not(.btn),
+input[type="submit"]:not(.btn)
+    font-weight: bold
+    position: relative
+    display: inline-block
+    padding: .175rem .75rem
+    line-height: 24px
+    height: auto
+    overflow: hidden
+    cursor: pointer
+    white-space: nowrap
+    color: #fff
+    background-color: #007bff
+    border: 1px solid #007bff
+    border-radius: .25rem
+
+
+.button:not(.btn):hover,
+button[type="submit"]:not(.btn):hover,
+input[type="submit"]:not(.btn):hover
+    color: #fff
+    background-color: #0069d9
+    border-color: #0062cc
+
+
+.button:not(.btn):focus,
+button[type="submit"]:not(.btn):focus,
+input[type="submit"]:not(.btn):focus
+    outline: 0
+    box-shadow: 0 0 0 0.2rem rgba(38,143,255,.5)
+
+
+label
+    color: #0c0c0c
+    font-size: 13px
+    font-weight: 500
+
+
+blockquote
+    padding: 15px
+    color: #010101
+    background-color: #f8f9fa
+    border-bottom: 4px solid #007bff
+
+
+blockquote p:last-child
+    margin: 0
+
+
+.ltr
+    direction: ltr
+
+.rtl
+    direction: rtl
+
+
+.transition
+    -webkit-transition: all 0.2s ease-in-out
+    -moz-transition: all 0.2s ease-in-out
+    transition: all 0.2s ease-in-out
+
+
+.bold-icon:before
+    font-weight: 600
+
+
+.bold-300
+    font-weight: 300
+
+
+.bold-400
+    font-weight: 400
+
+
+.bold-500
+    font-weight: 500
+
+
+.bold-600
+    font-weight: 600
+
+
+.bold-900
+    font-weight: 900
+
+
+.font-10
+    font-size: 10px
+
+
+.font-11
+    font-size: 11px
+
+
+.font-12
+    font-size: 12px
+
+
+.font-14
+    font-size: 14px
+
+
+.font-16
+    font-size: 16px
+
+
+.font-18
+    font-size: 18px
+
+
+.font-20
+    font-size: 20px
+
+
+.font-22
+    font-size: 22px
+
+
+.font-24
+    font-size: 24px
+
+
+.font-28
+    font-size: 28px
+
+
+.font-32
+    font-size: 32px
+
+
+.font-36
+    font-size: 36px
+
+
+.font-40
+    font-size: 40px
+
+
+.ellipsis
+    display: block
+    overflow: hidden
+    white-space: nowrap
+    text-overflow: ellipsis
+
+
+.no-shadow:focus
+    box-shadow: none
+
+
+/**
+ * PACE
+ */
+.pace
+    -webkit-pointer-events: none
+    pointer-events: none
+    -webkit-user-select: none
+    -moz-user-select: none
+    user-select: none
+
+
+.pace-inactive
+    display: none
+
+
+.pace .pace-progress
+    background: #fea000
+    position: fixed
+    z-index: 2000
+    top: 0
+    right: 100%
+    width: 100%
+    height: 2px
+
+
+.pace .pace-progress-inner
+    display: block
+    position: absolute
+    right: 0px
+    width: 100px
+    height: 100%
+    box-shadow: 0 0 10px #fea000, 0 0 5px #fea000
+    opacity: 1.0
+    -webkit-transform: rotate(3deg) translate(0px, -4px)
+    -moz-transform: rotate(3deg) translate(0px, -4px)
+    -ms-transform: rotate(3deg) translate(0px, -4px)
+    -o-transform: rotate(3deg) translate(0px, -4px)
+    transform: rotate(3deg) translate(0px, -4px)
+
+
+.pace .pace-activity
+    display: block
+    position: fixed
+    z-index: 2000
+    top: 15px
+    right: 15px
+    width: 14px
+    height: 14px
+    border: solid 2px transparent
+    border-top-color: #4d4d4d
+    border-left-color: #4d4d4d
+    border-radius: 10px
+    -webkit-animation: pace-spinner 400ms linear infinite
+    -moz-animation: pace-spinner 400ms linear infinite
+    -ms-animation: pace-spinner 400ms linear infinite
+    -o-animation: pace-spinner 400ms linear infinite
+    animation: pace-spinner 400ms linear infinite
+
+
+@-webkit-keyframes pace-spinner
+    0%
+        -webkit-transform: rotate(0deg)
+        transform: rotate(0deg)
+    100%
+        -webkit-transform: rotate(360deg)
+        transform: rotate(360deg)
+
+
+@-moz-keyframes pace-spinner
+    0%
+        -moz-transform: rotate(0deg)
+        transform: rotate(0deg)
+    100%
+        -moz-transform: rotate(360deg)
+        transform: rotate(360deg)
+
+
+@-o-keyframes pace-spinner
+    0%
+        -o-transform: rotate(0deg)
+        transform: rotate(0deg)
+    100%
+        -o-transform: rotate(360deg)
+        transform: rotate(360deg)
+
+
+@-ms-keyframes pace-spinner
+    0%
+        -ms-transform: rotate(0deg)
+        transform: rotate(0deg)
+    100%
+        -ms-transform: rotate(360deg)
+        transform: rotate(360deg)
+
+
+@keyframes pace-spinner
+    0%
+        transform: rotate(0deg)
+        transform: rotate(0deg)
+    100%
+        transform: rotate(360deg)
+        transform: rotate(360deg)
+
+
+/**
+ * BOOTSTRAP
+ */
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+    color: #0c0c0c
+    font-weight: 500
+    line-height: 1.5
+
+
+.h1,
+h1
+    font-size: 24px
+
+
+.h2,
+h2
+    font-size: 20px
+
+
+.h3,
+h3
+    font-size: 18px
+
+
+.h4,
+h4
+    font-size: 16px
+
+
+.h5,
+h5
+    font-size: 14px
+
+
+.h6,
+h6
+    font-size: 13px
+
+
+.nav
+    padding-right: 0
+    padding-left: inherit
+
+
+.navbar-nav
+    padding-right: 0
+    padding-left: inherit
+
+
+.list-inline-item:not(:last-child)
+    margin-left: .5rem
+    margin-right: 0
+
+
+.tooltip
+    font-size: 12px
+    font-family: $main-font, tahoma, sans-serif
+
+
+.tooltip > .tooltip-inner
+    background-color: #007bff
+
+
+.bs-tooltip-right .arrow::before,
+.bs-tooltip-auto[x-placement^="right"] .arrow::before
+    border-right-color: #007bff
+
+
+.bs-tooltip-left .arrow::before,
+.bs-tooltip-auto[x-placement^="left"] .arrow::before
+    border-left-color: #007bff
+
+
+.bs-tooltip-top .arrow::before,
+.bs-tooltip-auto[x-placement^="top"] .arrow::before
+    border-top-color: #007bff
+
+
+.bs-tooltip-bottom .arrow::before,
+.bs-tooltip-auto[x-placement^="bottom"] .arrow::before
+    border-bottom-color: #007bff
+
+
+.btn-group>.btn-group:not(:last-child)>.btn,
+.btn-group>.btn:not(:last-child):not(.dropdown-toggle),
+.input-group>.custom-select:not(:last-child),
+.input-group>.form-control:not(:last-child)
+    border-top-right-radius: .25rem
+    border-bottom-right-radius: .25rem
+    border-top-left-radius: 0
+    border-bottom-left-radius: 0
+
+
+.btn-group>.btn-group:not(:first-child)>.btn,
+.btn-group>.btn:not(:first-child),
+.input-group>.input-group-append>.btn,
+.input-group>.input-group-append>.input-group-text,
+.input-group>.input-group-prepend:first-child>.btn:not(:first-child),
+.input-group>.input-group-prepend:first-child>.input-group-text:not(:first-child),
+.input-group>.input-group-prepend:not(:first-child)>.btn,
+.input-group>.input-group-prepend:not(:first-child)>.input-group-text
+    border-top-right-radius: 0
+    border-bottom-right-radius: 0
+    border-top-left-radius: .25rem
+    border-bottom-left-radius: .25rem
+
+
+.input-group>.input-group-append:last-child>.btn:not(:last-child):not(.dropdown-toggle),
+.input-group>.input-group-append:last-child>.input-group-text:not(:last-child),
+.input-group>.input-group-append:not(:last-child)>.btn,
+.input-group>.input-group-append:not(:last-child)>.input-group-text,
+.input-group>.input-group-prepend>.btn, .input-group>.input-group-prepend>.input-group-text
+    border-top-right-radius: .25rem
+    border-bottom-right-radius: .25rem
+    border-top-left-radius: 0
+    border-bottom-left-radius: 0
+
+
+.input-group>.custom-select:not(:first-child),
+.input-group>.form-control:not(:first-child)
+    border-top-left-radius: 0
+    border-bottom-left-radius: 0
+    border-top-right-radius: 0
+    border-bottom-right-radius: 0
+
+
+.input-group-append
+    margin-left: 0
+    margin-right: -1px
+
+
+.btn,
+.form-control
+    font-size: 13px
+    line-height: 24px
+
+
+.form-control
+    height: auto
+    background-color: #f6f6f8
+    border-color: #f6f6f8
+    border-radius: .6rem
+
+
+.form-control:focus
+    background-color: #fff
+    border-color: #f9df95
+    box-shadow: none
+
+
+.alert-dismissible
+    padding-right: 1.25rem
+    padding-left: 4rem
+
+
+.alert-dismissible .close
+    left: 0
+    right: auto
+
+
+.dropdown-menu
+    right: 0
+    left: auto
+    float: right
+    min-width: 220px
+    padding: 10px 0
+    font-size: 12px
+    font-weight: 600
+    color: #0c0c0c
+    text-align: right
+    background-color: #fff
+    border: 0
+    border-radius: 0
+    box-shadow: 0 3px 15px rgba( 0, 0, 0, 0.07 )
+
+
+.dropdown-item
+    padding: .35rem 1.5rem
+    color: #0c0c0c
+
+
+.dropdown-item:hover,
+.dropdown-item:focus
+    color: #007bff
+    background: transparent
+
+
+.dropdown-toggle::after
+    margin-left: 0
+    margin-right: .255em
+    vertical-align: middle
+
+
+.modal-footer>:not(:last-child)
+    margin-right: 0
+    margin-left: .25rem
+
+
+.modal-footer
+    -ms-flex-pack: start
+    justify-content: flex-start
+
+
+.form-check
+    padding-left: 0
+    padding-right: 1.25rem
+
+
+.form-check-input
+    margin-left: 0
+    margin-right: -1.25rem
+
+
+/**
+ * LOGIN PAGE
+ */
+.login-page-wrapper,
+.login-page-wrapper > .row
+    min-height: 100vh
+
+
+.login-page-wrapper .gradient-col
+    position: fixed
+    left: 50%
+    top: 0
+    bottom: 0
+    right: 0
+    min-height: 100vh
+    background: #f6f6f8
+
+
+.login-page-wrapper .auth-form
+    max-width: 500px
+
+
+/**
+ * PANEL WRAPPER
+ */
+.app-panel-menu
+    top: 0
+    right: 0
+    bottom: 0
+    width: 250px
+    background-color: #f6f6f8
+    z-index: 99
+
+
+.app-panel-content
+    padding: 30px
+    padding-right: 280px
+
+
+/**
+ * PANEL NAVIGATION
+ */
+.app-panel-menu .app-logo .logo
+    height: 40px
+    width: auto
+
+
+.app-panel-menu .app-avatar .avatar
+    width: 96px
+    height: 96px
+
+
+.app-panel-menu .app-nav .nav-link
+    padding: 8px
+    color: #4e4e4e
+    font-size: 14px
+    font-weight: 300
+    line-height: 25px
+    transition: all .2s ease-in-out
+
+
+.app-panel-menu .app-nav .nav-link i
+    display: inline-block
+    width: 25px
+    height: 25px
+    text-align: center
+    line-height: 25px
+
+
+.app-panel-menu .app-nav .nav-link:hover,
+.app-panel-menu .app-nav .nav-link:focus,
+.app-panel-menu .app-nav .active .nav-link
+    color: #000
+
+
+.app-panel-menu .app-nav .has-children
+    position: relative
+    transition: all 0.2s ease-in-out
+
+
+.app-panel-menu .app-nav .has-children:after
+    content: "\f107"
+    position: absolute
+    left: 8px
+    top: 8px
+    color: #aaa
+    font-weight: 900
+    line-height: 25px
+    font-family: "Font Awesome 5 Free"
+
+
+.app-panel-menu .app-nav .has-children.open
+    background-color: #eee
+
+
+.app-panel-menu .app-nav .children
+    display: none
+    list-style: none
+
+
+.app-panel-menu .app-nav .children .nav-link
+    padding: 5px
+    font-size: 12px
+    line-height: 20px
+
+
+.app-panel-menu .app-nav .children .nav-link i
+    width: 20px
+    height: 20px
+    color: #aaa
+    line-height: 20px
+
+
+/**
+ * TOGGLE MOBILE MENU BUTTON
+ */
+.app-menu-toggle
+    right: 10px
+    top: 38px
+    z-index: 999
+
+
+.toggle-quru
+    display: block
+    position: relative
+    overflow: hidden
+    margin: 0
+    padding: 0
+    width: 42px
+    height: 40px
+    font-size: 0
+    text-indent: -9999px
+    appearance: none
+    box-shadow: none
+    border-radius: none
+    border: none
+    cursor: pointer
+    transition: background 0.3s
+
+
+.toggle-quru:focus
+    outline: none
+
+
+.toggle-quru span
+    display: block
+    position: absolute
+    top: 18.3px
+    left: 7.5px
+    right: 7.5px
+    height: 3px
+    background: #333
+
+
+.toggle-quru span::before,
+.toggle-quru span::after
+    position: absolute
+    display: block
+    left: 0
+    width: 100%
+    height: 3px
+    background-color: #333
+    content: ""
+
+
+.toggle-quru span::before
+    top: -8px
+
+
+.toggle-quru span::after
+    bottom: -8px
+
+
+.toggle-daha
+    background-color: #fff
+
+
+.toggle-daha span
+    transition: transform 0.3s
+
+
+.toggle-daha span::before
+    transform-origin: top left
+    transition: transform 0.3s, width 0.3s, top 0.3s
+
+
+.toggle-daha span::after
+    transform-origin: bottom left
+    transition: transform 0.3s, width 0.3s, bottom 0.3s
+
+
+.toggle-daha.is-active span
+    transform: rotate(180deg)
+
+
+.toggle-daha.is-active span::before,
+.toggle-daha.is-active span::after
+    width: 50%
+
+
+.toggle-daha.is-active span::before
+    top: 0
+    transform: translateX(-3.3px) translateY(1.66px) rotate(-45deg)
+
+
+.toggle-daha.is-active span::after
+    bottom: 0
+    transform: translateX(-3.3px) translateY(-1.66px) rotate(45deg)
+
+
+/* tables */
+.lian-table thead
+    background: #eee
+
+
+.lian-table tr > th
+    min-width: 80px
+    padding: 0.5rem
+    color: #000
+    font-size: 12px
+    font-weight: 400
+
+
+.lian-table tr > th.sm
+    width: 80px
+
+
+.lian-table tr > th.md
+    width: 140px
+
+
+.lian-table tr > th.lg
+    min-width: 240px
+
+
+.lian-table tbody tr > th,
+.lian-table tr > td
+    padding: 0.5rem
+    color: #444
+    font-size: 12px
+    font-weight: 400
+
+
+.lian-table tbody tr > th,
+.lian-table tbody tr > td
+    border-bottom: 1px solid #eee
+
+.has-error
+    color: #dc3545 !important
+    border-color: #dc3545 !important
+    input, label
+        color: #dc3545 !important
+        border-color: #dc3545 !important
+
+/**
+ * RESPONSIVE
+ */
+@media( max-width: 991px )
+    .login-page-wrapper,
+    .login-page-wrapper > .row
+        min-height: 100%
+
+
+    .login-page-wrapper .gradient-col
+        position: relative
+        left: 0
+        min-height: 250px
+
+
+    .app-panel-menu
+        right: -250px
+
+
+    .app-panel-menu.open
+        right: 0
+
+
+    .app-panel-content
+        padding-right: 30px
+
+
+    .app-panel-content > .app-header
+        padding-right: 30px
+
